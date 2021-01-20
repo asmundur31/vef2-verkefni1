@@ -1,0 +1,13 @@
+.footer {
+  margin: 4*$space 0 2*$space 0;
+  text-align: center;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__link:visited {
+    color: #000;
+  }
+}
+

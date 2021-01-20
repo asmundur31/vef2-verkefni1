@@ -1,0 +1,27 @@
+$space: 10px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  background-color: rgb(219, 219, 219);
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@import 'videos';
+@import 'header';
+@import 'footer';
+@import 'item';
+@import 'video';

@@ -1,0 +1,11 @@
+.video {
+  padding: 3*$space 0 0 0;
+  
+  &__vid {
+    width: 100%;
+  }
+
+  &__description {
+    padding: 4*$space 0 0 0;
+  }
+}

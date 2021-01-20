@@ -1,0 +1,39 @@
+{
+  "name": "verkefni1",
+  "version": "1.0.0",
+  "description": "Fyrsta minna verkefnið í vefforritun 2",
+  "main": "./src/lib/videos.js",
+  "dependencies": {
+    "core-js": "^3.8.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "concurrently": "^5.3.0",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "node-sass": "^5.0.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html video.html ./dist/styles.css",
+    "eslint": "eslint *.js ./src/**/*.js",
+    "stylelint": "stylelint ./src/styles/**/*.scss --syntax scss",
+    "sass": "node-sass --source-map-embed --recursive ./src/styles/styles.scss ./dist/styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch --recursive src/styles/styles.scss ./dist/styles.css",
+    "test": "concurrently npm:stylelint npm:eslint",
+    "dev": "concurrently  npm:sass npm:sass-watch npm:browser-sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmundur31/vef2-verkefni1.git"
+  },
+  "author": "Ásmundur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asmundur31/vef2-verkefni1/issues"
+  },
+  "homepage": "https://github.com/asmundur31/vef2-verkefni1#readme"
+}
