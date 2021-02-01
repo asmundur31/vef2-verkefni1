@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+// eslint-disable-next-line import/no-extraneous-dependencies
 import express from 'express';
 import util from 'util';
 import fs from 'fs';
@@ -29,8 +31,10 @@ function formatCategories(gogn) {
       vids.push(videos.find((vid) => vid.id === videoId));
     });
     // yfirskrifum id fylkið með object fylkinu
+    // eslint-disable-next-line no-param-reassign
     category.videos = vids;
   });
+
   return categories;
 }
 
@@ -46,6 +50,7 @@ function formatVideo(videos, vid) {
     vids.push(videos.find((v) => v.id === relId));
   });
   // yfirskrifum id fylkið með object fylkinu
+  // eslint-disable-next-line no-param-reassign
   vid.related = vids;
   return vid;
 }

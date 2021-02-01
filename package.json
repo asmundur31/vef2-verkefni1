@@ -2,8 +2,7 @@
   "name": "verkefni1",
   "version": "1.0.0",
   "description": "Fyrsta minna verkefnið í vefforritun 2",
-  "main": "app.js",
-  "type": "module",
+  "main": "./app.js",
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1"
