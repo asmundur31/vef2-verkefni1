@@ -20,51 +20,51 @@ $gutter: 20px;
   &__col {
     padding-left: $gutter/2;
     padding-right: $gutter/2;
-  
+
     &-12 {
       width: 100%;
     }
-  
+
     &-11 {
       width: calc(11 * 100% / 12);
     }
-  
+
     &-10 {
       width: calc(10 * 100% / 12);
     }
-  
+
     &-9 {
       width: calc(9 * 100% / 12);
     }
-  
+
     &-8 {
       width: calc(8 * 100% / 12);
     }
-  
+
     &-7 {
       width: calc(7 * 100% / 12);
     }
-  
+
     &-6 {
       width: calc(6 * 100% / 12);
     }
-  
+
     &-5 {
       width: calc(5 * 100% / 12);
     }
-  
+
     &-4 {
       width: calc(4 * 100% / 12);
     }
-  
+
     &-3 {
       width: calc(3 * 100% / 12);
     }
-  
+
     &-2 {
       width: calc(2 * 100% / 12);
     }
-  
+
     &-1 {
       width: calc(100% / 12);
     }
@@ -85,53 +85,55 @@ $gutter: 20px;
 }
 
 @media (max-width: 599px) {
-  .videos__col {
-    &-sm-12 {
-      width: 100%;
-    }
+  .videos {
+    &__col {
+      &-sm-12 {
+        width: 100%;
+      }
 
-    &-sm-11 {
-      width: calc(11 * 100% / 12);
-    }
+      &-sm-11 {
+        width: calc(11 * 100% / 12);
+      }
 
-    &-sm-10 {
-      width: calc(10 * 100% / 12);
-    }
+      &-sm-10 {
+        width: calc(10 * 100% / 12);
+      }
 
-    &-sm-9 {
-      width: calc(9 * 100% / 12);
-    }
+      &-sm-9 {
+        width: calc(9 * 100% / 12);
+      }
 
-    &-sm-8 {
-      width: calc(8 * 100% / 12);
-    }
+      &-sm-8 {
+        width: calc(8 * 100% / 12);
+      }
 
-    &-sm-7 {
-      width: calc(7 * 100% / 12);
-    }
+      &-sm-7 {
+        width: calc(7 * 100% / 12);
+      }
 
-    &-sm-6 {
-      width: calc(6 * 100% / 12);
-    }
+      &-sm-6 {
+        width: calc(6 * 100% / 12);
+      }
 
-    &-sm-5 {
-      width: calc(5 * 100% / 12);
-    }
+      &-sm-5 {
+        width: calc(5 * 100% / 12);
+      }
 
-    &-sm-4 {
-      width: calc(4 * 100% / 12);
-    }
+      &-sm-4 {
+        width: calc(4 * 100% / 12);
+      }
 
-    &-sm-3 {
-      width: calc(3 * 100% / 12);
-    }
+      &-sm-3 {
+        width: calc(3 * 100% / 12);
+      }
 
-    &-sm-2 {
-      width: calc(2 * 100% / 12);
-    }
+      &-sm-2 {
+        width: calc(2 * 100% / 12);
+      }
 
-    &-sm-1 {
-      width: calc(100% / 12);
+      &-sm-1 {
+        width: calc(100% / 12);
+      }
     }
   }
 }

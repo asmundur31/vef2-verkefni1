@@ -1,0 +1,51 @@
+<%- include('header') -%>
+
+  <main class="videos">
+    <div class="videos__row">
+
+      <div class="videos__col videos__col-12">
+        <div class="video">
+          <video class="video__vid" controls>
+            <source src="./public/<%= video.video %>" type="video/mp4">
+            <p>Your browser doesn't support HTML5 video.</p>
+          </video>
+          <div class="video__description">
+            <%= video.description %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="videos__title">
+      Tengd myndbönd
+    </div>
+    <div class="videos__row">
+      <% video.related.forEach((video) => { %>
+        <div class="videos__col videos__col-4 videos__col-sm-12">
+          <div class="item">
+            <a class="item__image" href="./<%= video.id %>">
+              <img class="item__img" src="./public/<%= video.poster %>">
+              <div class="item__duration">
+                <%= locals.formatTime(video.duration); %>
+              </div>
+            </a>
+            <div class="item__content">
+              <h3 class="item__title">
+                <%= video.title %>
+              </h3>
+              <div class="item__created">
+                <%= locals.formatAge(video.created); %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      <hr class="videos__line">
+    </div>
+  </main>
+  <footer class="footer">
+    <a class="footer__link" href="/">Til baka</a>
+  </footer>
+
+<%- include('footer') -%>

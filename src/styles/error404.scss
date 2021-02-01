@@ -1,0 +1,10 @@
+.error404 {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1600px;
+
+  &__image {
+    margin: 4*$space auto;
+    width: 50%;
+  }
+}
